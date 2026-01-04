@@ -61,7 +61,7 @@ partial class MainForm
         Controls.Add(label1);
         Controls.Add(pictureBoxQRCode);
         Name = "MainForm";
-        Text = "PhotoDrop";
+        Text = "PhotoDrop V1.01";
         FormClosing += MainForm_Closing;
         ((System.ComponentModel.ISupportInitialize)pictureBoxQRCode).EndInit();
         ResumeLayout(false);
