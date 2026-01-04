@@ -22,7 +22,7 @@ public partial class MainForm : Form
         label1.Text = url;
 	if (Process.GetProcessesByName("PhotoUploader").Any())
 	{
-	    MessageBox.Show("Web server is already running.");
+	   // MessageBox.Show("Web server is already running.");
 	    return;
 	}
 
