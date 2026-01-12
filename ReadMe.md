@@ -1,4 +1,29 @@
-# Photo Uploader front end.
- This program invoke PhotoUpLoader (Utility to upload photos from smart phone to PC) and 
- show QR code indicating Server's (PhotoUpLoader's) URL.
- You need PhotoUpLoader to execute this program.
+# PhotoDrop
+ スマホの写真をパソコンにupload するツールです。スマホではなくWindows PC にインストールします。
+ 
+#インストール
+ PhotoDrop.msi をダブルクリックしてインストールします。
+ 
+
+#使い方
+  PhotoDrop のアイコンをダブルクリックするとQR Code がデスクトップに表示されるのでそれをスマホで読み取り、
+  その後スマホ側で写真を選択し、「PCにコピー」を押します。PCのピクチャーフォルダーにその日の日付のサブフォルダー
+  ができているのでその中に写真が保存されます。
+  ![](image1.png =300x )
+　写真は複数枚同時に送れますが、合計サイズは 50Mバイトまでに制限されています。
+　動画は送れません。
+
+#ソースコード
+ このプログラムは二つのプログラムが必要です。一つはPhotoDrop2.exe もう一つは PhotoUpLoader.exe です。
+ 前者はQR code を出すだけのプログラムです。後者は裏で動いておりスマホからの写真をしかるべきフォルダーに
+ 保存するサーバーです。どちらもgit にソースコードを公開しています。
+   [https://github.com/charliekato/PhotoDrop2](https://github.com/charliekato/PhotoDrop2)
+   [https://github.com/charliekato/PhotoUpLoader](https://github.com/charliekato/PhotoUpLoader)
+#ライセンス
+　GPL です。
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+This program is distributed in the hope that it will be useful,    but WITHOUT ANY WARRANTY; without even the implied warranty of    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the    GNU General Public License for more details.
+You should have received a copy of the GNU General Public License    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    This program comes with ABSOLUTELY NO WARRANTY; 
+
+
