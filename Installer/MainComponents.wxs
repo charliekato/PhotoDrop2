@@ -1,0 +1,40 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" 
+  xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui" >
+  <Fragment>
+    <ComponentGroup Id="MainComponents" Directory="INSTALLFOLDER">
+      <Component>
+	 <File Source="..\bin\Release\net9.0-windows\win-x64\publish\PhotoDrop2.exe" KeyPath="yes"/>
+      </Component>
+      <Component>
+	 <File Source="..\..\PhotoUpLoader\bin\Release\net9.0\win-x64\publish\PhotoUpLoader.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="DesktopShortcut">
+	<Shortcut Id="DesktopShortcut"
+	    Name="PhotoDrop"
+	    Description="Launch PhotoDrop"
+	    Target="[INSTALLFOLDER]PhotoDrop2.exe"
+	    Directory="DesktopFolder"
+	    WorkingDirectory="INSTALLFOLDER" />
+	<RemoveFile Id="RemoveDesktopShortcut" Name="PhotoDrop2.lnk" On="uninstall" Directory="DesktopFolder" />
+	    <RegistryValue Root="HKLM" Key="Software\CharlieKato\PhotoDrop" Name="installed" Type="integer" Value="1" />
+      </Component>
+
+      <Component Id="ProgramMenuShortcut"
+		Directory="ApplicationProgramsFolder">
+        <Shortcut Id="ProgramMenuShortcut"
+		  Name="PhotoDrop"
+		  Description="Launch PhotoDrop"
+		  Target="[INSTALLFOLDER]PhotoDrop2.exe"
+		  WorkingDirectory="INSTALLFOLDER" />
+	<RemoveFolder Id="RemoveProgramMenuFolder"  
+		      On="uninstall" 
+		      Directory="ApplicationProgramsFolder" />
+		      <!--HKCU = per user  HKLM = per machine -->
+	<RegistryKey Root="HKCU" Key="Software\CharlieKato\PhotoDrop" >
+			    <RegistryValue Name="menu" Type="integer" Value="1" KeyPath="yes"/>
+	</RegistryKey>
+      </Component>
+
+    </ComponentGroup>
+  </Fragment>
+</Wix>
