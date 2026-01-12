@@ -9,6 +9,7 @@ public partial class MainForm : Form
     public MainForm()
     {
         InitializeComponent();
+	this.Text = VersionInfo;
 #pragma warning disable CS8622 // パラメーターの型における参照型の NULL 値の許容が、ターゲット デリゲートと一致しません。おそらく、NULL 値の許容の属性が原因です。
         this.Load += MainForm_Load;
 #pragma warning restore CS8622 // パラメーターの型における参照型の NULL 値の許容が、ターゲット デリゲートと一致しません。おそらく、NULL 値の許容の属性が原因です。
