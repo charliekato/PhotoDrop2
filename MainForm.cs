@@ -47,7 +47,6 @@ public partial class MainForm : Form
 
     private void MainForm_Closing(object sender, FormClosingEventArgs e)
     {
-        /*
 
         if (serverProcess != null && !serverProcess.HasExited)
         {
@@ -59,7 +58,6 @@ public partial class MainForm : Form
                 serverProcess.Kill(); // ç≈èIéËíi
             }
         }
-        */
 
     }
 }
