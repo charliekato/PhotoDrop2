@@ -11,4 +11,6 @@ obj/
 *.user
 *.suo
 
+*.msi
+Installer/*.msi
 
