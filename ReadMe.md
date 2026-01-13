@@ -2,7 +2,7 @@
  スマホの写真をパソコンにupload するツールです。スマホではなくWindows PC にインストールします。
  
 # インストール
- ![PhotoDrop.msi](https://drive.google.com/file/d/1cfQaO5ygQRSLdWKnVO9D_Rz9xmHFySEs/view?usp=sharing) をダブルクリックしてインストールします。
+ [PhotoDrop.msi](https://drive.google.com/file/d/1cfQaO5ygQRSLdWKnVO9D_Rz9xmHFySEs/view?usp=sharing) をダブルクリックしてインストールします。
  
 
 # 使い方
