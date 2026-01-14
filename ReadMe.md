@@ -4,7 +4,7 @@
  
 # インストール
 
- Windows installer (file名 : PhotoDrop1.0.2.msi) を ダウンロードして実行。
+ Windows installer file名 : [PhotoDrop1.0.2.msi](https://github.com/charliekato/PhotoDrop2/releases/DownLoad/V1.0.2/Phodrop1.0.2.msi) を ダウンロードして実行。
  
 
 # 使い方
