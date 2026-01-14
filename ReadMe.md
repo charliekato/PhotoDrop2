@@ -1,9 +1,10 @@
 # PhotoDrop
  スマホの写真をパソコンにupload するツールです。スマホではなくWindows PC にインストールします。
+ PC上でこのアプリを立ち上げるとQR code が出てくるのでそれをスマホで読み込んでその後はスマホ側で操作します。
  
 # インストール
 
-  PhotoDrop.msi (windows installer) を [google drive](https://drive.google.com/file/d/1cfQaO5ygQRSLdWKnVO9D_Rz9xmHFySEs/view?usp=sharing) よりダウンロードし、ダブルクリックしてインストールします。
+ Windows installer (file名 : PhotoDrop1.0.2.msi) を ダウンロードして実行。
  
 
 # 使い方
@@ -18,10 +19,10 @@
 　動画は送れません。
 
 # ソースコード
- このプログラムは二つのプログラムが必要です。一つはPhotoDrop2.exe もう一つは PhotoUpLoader.exe です。
+ このプログラムは二つのプログラムが必要です。一つはPhotoDrop2.exe もう一つは PhotoUpLoader.exe です。Installerを実行すればどちらもインストールされます。
  前者はQR code を出すだけのプログラムです。後者は裏で動いておりスマホからの写真をしかるべきフォルダーに
- 保存するサーバーです。どちらもgit にソースコードを公開しています。<br>
-   <https://github.com/charliekato/PhotoDrop2> <br>
+ 保存するサーバーです。PhotoUpLoader は別のrepository (下記) にソースコードを公開しています。<br>
+   
    <https://github.com/charliekato/PhotoUpLoader>
 # ライセンス
 　GPL です。<br>
